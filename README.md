@@ -42,7 +42,7 @@ Reports are saved in `reports/playwright-api/`.
 Tests run automatically on every push via GitHub Actions.
 
 - **Workflow**: `.github/workflows/playwright.yml`
-- **Artifacts**: HTML reports are uploaded as `playwright-report`.
+- **Artifacts**: HTML report (`playwright-report`) and test results/logs (`playwright-test-results`) are uploaded. In CI, download the **playwright-report** artifact from the Actions run to view the HTML report.
 
 ## 📁 Project Structure
 

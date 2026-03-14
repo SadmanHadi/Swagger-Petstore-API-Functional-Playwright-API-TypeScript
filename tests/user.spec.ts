@@ -39,4 +39,10 @@ test.describe('Petstore API - User Operations', () => {
     // Swagger Petstore may return 404 or 405 for non-existent users or method not allowed
     expect([404, 405]).toContain(response.status());
   });
+
+  test('Boundary Case: Get User with invalid username format', async () => {
+    // Empty or path-invalid username; API may return 404, 405, or 400
+    const response = await userClient.getUser('');
+    expect([400, 404, 405]).toContain(response.status());
+  });
 });

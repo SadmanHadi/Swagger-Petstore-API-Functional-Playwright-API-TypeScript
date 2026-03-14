@@ -20,6 +20,7 @@ This document outlines the test cases implemented in the Playwright API automati
 | U2  | Get User            | Happy Path | GET /user/{username}            | 200 OK, Username, Email, ID match |
 | U3  | Delete User         | Happy Path | DELETE /user/{username}         | 200 OK                            |
 | U4  | Delete Non-Existent | Negative   | DELETE /user/non_existent_id    | 404/405 (Error)                   |
+| U5  | Invalid Username    | Boundary   | GET /user/{username} with empty | 400/404/405 (Error)               |
 
 ## Cleanup Strategy
 
