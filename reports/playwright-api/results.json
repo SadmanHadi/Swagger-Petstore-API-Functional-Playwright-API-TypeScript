@@ -1,0 +1,1494 @@
+{
+  "config": {
+    "configFile": "E:\\Projects\\AGT\\Petstore-Playwright API Functional\\playwright.config.ts",
+    "rootDir": "E:/Projects/AGT/Petstore-Playwright API Functional/tests/api",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 8
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "E:/Projects/AGT/Petstore-Playwright API Functional/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 8
+        },
+        "id": "",
+        "name": "",
+        "testDir": "E:/Projects/AGT/Petstore-Playwright API Functional/tests/api",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "html",
+        {
+          "outputFolder": "reports/playwright-api",
+          "open": "never"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "reports/playwright-api/results.json"
+        }
+      ],
+      [
+        "list",
+        null
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "runAgents": "none",
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.58.2",
+    "workers": 8,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "pet\\createPet.spec.ts",
+      "file": "pet/createPet.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Pet Operations: Create Pet",
+          "file": "pet/createPet.spec.ts",
+          "line": 7,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Happy Path: Create a new pet with valid data",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1309,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[API Request] POST v2/pet - Status: 200\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-16T09:39:38.212Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "54d81642a37e6808bf02-e8512abb9fc5cd5243dd",
+              "file": "pet/createPet.spec.ts",
+              "line": 14,
+              "column": 7
+            },
+            {
+              "title": "Negative Case: Create pet with invalid status enum",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 1320,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[API Request] POST v2/pet - Status: 200\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-16T09:39:38.160Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "54d81642a37e6808bf02-6b689d7601ef897d069d",
+              "file": "pet/createPet.spec.ts",
+              "line": 23,
+              "column": 7
+            },
+            {
+              "title": "Boundary Case: Create pet with empty name",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 1298,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[API Request] POST v2/pet - Status: 200\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-16T09:39:38.219Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "54d81642a37e6808bf02-9bea2845280f5f2bf35d",
+              "file": "pet/createPet.spec.ts",
+              "line": 34,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "pet\\deletePet.spec.ts",
+      "file": "pet/deletePet.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Pet Operations: Delete Pet",
+          "file": "pet/deletePet.spec.ts",
+          "line": 6,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Happy Path: Delete pet by valid ID",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 1904,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[API Request] POST v2/pet - Status: 200\n"
+                        },
+                        {
+                          "text": "[API Request] DELETE v2/pet/35412 - Status: 200\n"
+                        },
+                        {
+                          "text": "[API Request] GET v2/pet/35412 - Status: 404\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-16T09:39:38.179Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8a0aa9abda21ee68906d-6a7e8a346a3b692c73fa",
+              "file": "pet/deletePet.spec.ts",
+              "line": 18,
+              "column": 7
+            },
+            {
+              "title": "Negative Case: Delete pet with non-existent ID",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 1656,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[API Request] POST v2/pet - Status: 200\n"
+                        },
+                        {
+                          "text": "[API Request] DELETE v2/pet/1234567890 - Status: 404\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-16T09:39:38.160Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8a0aa9abda21ee68906d-7099fac64109df275441",
+              "file": "pet/deletePet.spec.ts",
+              "line": 27,
+              "column": 7
+            },
+            {
+              "title": "Boundary Case: Delete pet with invalid ID format (null)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 5,
+                      "status": "passed",
+                      "duration": 1699,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[API Request] POST v2/pet - Status: 200\n"
+                        },
+                        {
+                          "text": "[API Request] DELETE v2/pet/ - Status: 405\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-16T09:39:38.180Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8a0aa9abda21ee68906d-7903aef624e0e47ae53e",
+              "file": "pet/deletePet.spec.ts",
+              "line": 32,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "pet\\getPet.spec.ts",
+      "file": "pet/getPet.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Pet Operations: Get Pet",
+          "file": "pet/getPet.spec.ts",
+          "line": 7,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Happy Path: Get pet by valid ID",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 6,
+                      "status": "passed",
+                      "duration": 333,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[API Request] POST v2/pet - Status: 200\n"
+                        },
+                        {
+                          "text": "[API Request] GET v2/pet/161205 - Status: 200\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-16T09:39:38.183Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f4d7f147f011d4e0bc09-176f6b134aa26299d2bc",
+              "file": "pet/getPet.spec.ts",
+              "line": 24,
+              "column": 7
+            },
+            {
+              "title": "Negative Case: Get pet with non-existent ID",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 7,
+                      "status": "passed",
+                      "duration": 316,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[API Request] POST v2/pet - Status: 200\n"
+                        },
+                        {
+                          "text": "[API Request] GET v2/pet/999999999 - Status: 404\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-16T09:39:38.177Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f4d7f147f011d4e0bc09-f5c61421e24cf905fc43",
+              "file": "pet/getPet.spec.ts",
+              "line": 32,
+              "column": 7
+            },
+            {
+              "title": "Boundary Case: Get pet with invalid string ID",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 311,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[API Request] POST v2/pet - Status: 200\n"
+                        },
+                        {
+                          "text": "[API Request] GET v2/pet/invalid_id_string - Status: 404\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-16T09:39:39.512Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f4d7f147f011d4e0bc09-f870195d5df15b132ba2",
+              "file": "pet/getPet.spec.ts",
+              "line": 38,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "pet\\updatePet.spec.ts",
+      "file": "pet/updatePet.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Pet Operations: Update Pet",
+          "file": "pet/updatePet.spec.ts",
+          "line": 7,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Happy Path: Update pet name and status",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 672,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[API Request] POST v2/pet - Status: 200\n"
+                        },
+                        {
+                          "text": "[API Request] PUT v2/pet - Status: 200\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-16T09:39:39.545Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "79808e32b40593ef1f66-21b89b7038c0a3c9a1b8",
+              "file": "pet/updatePet.spec.ts",
+              "line": 20,
+              "column": 7
+            },
+            {
+              "title": "Negative Case: Update pet with missing ID",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 627,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[API Request] POST v2/pet - Status: 200\n"
+                        },
+                        {
+                          "text": "[API Request] PUT v2/pet - Status: 200\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-16T09:39:39.548Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "79808e32b40593ef1f66-4175cad0efa8e1c11931",
+              "file": "pet/updatePet.spec.ts",
+              "line": 30,
+              "column": 7
+            },
+            {
+              "title": "Boundary Case: Update pet with extremely long name",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 6,
+                      "status": "passed",
+                      "duration": 608,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[API Request] POST v2/pet - Status: 200\n"
+                        },
+                        {
+                          "text": "[API Request] PUT v2/pet - Status: 200\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-16T09:39:39.827Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "79808e32b40593ef1f66-74f24d1aad7ea166de0b",
+              "file": "pet/updatePet.spec.ts",
+              "line": 39,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "store\\createOrder.spec.ts",
+      "file": "store/createOrder.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Store Operations: Create Order",
+          "file": "store/createOrder.spec.ts",
+          "line": 8,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Happy Path: Place a valid order",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 7,
+                      "status": "passed",
+                      "duration": 341,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[API Request] POST v2/pet - Status: 200\n"
+                        },
+                        {
+                          "text": "[API Request] POST v2/store/order - Status: 200\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-16T09:39:39.835Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "31322367991ec6a5c4f6-d95d063ef65bb56c3057",
+              "file": "store/createOrder.spec.ts",
+              "line": 23,
+              "column": 7
+            },
+            {
+              "title": "Negative Case: Place order with invalid petId",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 317,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[API Request] POST v2/pet - Status: 200\n"
+                        },
+                        {
+                          "text": "[API Request] POST v2/store/order - Status: 200\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-16T09:39:39.842Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "31322367991ec6a5c4f6-d2d698a5295f96a83edd",
+              "file": "store/createOrder.spec.ts",
+              "line": 32,
+              "column": 7
+            },
+            {
+              "title": "Boundary Case: Place order with max quantity",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 5,
+                      "status": "passed",
+                      "duration": 330,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[API Request] POST v2/pet - Status: 200\n"
+                        },
+                        {
+                          "text": "[API Request] POST v2/store/order - Status: 200\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-16T09:39:39.911Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "31322367991ec6a5c4f6-32b28dc487db14f851c8",
+              "file": "store/createOrder.spec.ts",
+              "line": 40,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "store\\deleteOrder.spec.ts",
+      "file": "store/deleteOrder.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Store Operations: Delete Order",
+          "file": "store/deleteOrder.spec.ts",
+          "line": 7,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Happy Path: Delete order by valid ID",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 1234,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[API Request] POST v2/pet - Status: 200\n"
+                        },
+                        {
+                          "text": "[API Request] POST v2/store/order - Status: 200\n"
+                        },
+                        {
+                          "text": "[API Request] DELETE v2/store/order/143508 - Status: 200\n"
+                        },
+                        {
+                          "text": "[API Request] GET v2/store/order/143508 - Status: 404\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-16T09:39:40.112Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "0c2e84a1847312138b82-3d6d3f36d6f225a59a1a",
+              "file": "store/deleteOrder.spec.ts",
+              "line": 24,
+              "column": 7
+            },
+            {
+              "title": "Negative Case: Delete order with non-existent ID",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 931,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[API Request] POST v2/pet - Status: 200\n"
+                        },
+                        {
+                          "text": "[API Request] POST v2/store/order - Status: 200\n"
+                        },
+                        {
+                          "text": "[API Request] DELETE v2/store/order/999999999 - Status: 404\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-16T09:39:40.167Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "0c2e84a1847312138b82-99c9303d09294bae30d4",
+              "file": "store/deleteOrder.spec.ts",
+              "line": 33,
+              "column": 7
+            },
+            {
+              "title": "Boundary Case: Delete order twice",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1239,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[API Request] POST v2/pet - Status: 200\n"
+                        },
+                        {
+                          "text": "[API Request] POST v2/store/order - Status: 200\n"
+                        },
+                        {
+                          "text": "[API Request] DELETE v2/store/order/983435 - Status: 200\n"
+                        },
+                        {
+                          "text": "[API Request] DELETE v2/store/order/983435 - Status: 404\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-16T09:39:40.191Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "0c2e84a1847312138b82-443bc34583eef4f7516b",
+              "file": "store/deleteOrder.spec.ts",
+              "line": 38,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "store\\getOrder.spec.ts",
+      "file": "store/getOrder.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Store Operations: Get Order",
+          "file": "store/getOrder.spec.ts",
+          "line": 8,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Happy Path: Get order by valid ID",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 323,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[API Request] POST v2/pet - Status: 200\n"
+                        },
+                        {
+                          "text": "[API Request] POST v2/store/order - Status: 200\n"
+                        },
+                        {
+                          "text": "[API Request] GET v2/store/order/689215 - Status: 200\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-16T09:39:40.232Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "459492d6fe8bd9b49ab3-4165c525a7e5f780853b",
+              "file": "store/getOrder.spec.ts",
+              "line": 27,
+              "column": 7
+            },
+            {
+              "title": "Negative Case: Get order with invalid ID string",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 6,
+                      "status": "passed",
+                      "duration": 309,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[API Request] POST v2/pet - Status: 200\n"
+                        },
+                        {
+                          "text": "[API Request] POST v2/store/order - Status: 200\n"
+                        },
+                        {
+                          "text": "[API Request] GET v2/store/order/abc_123 - Status: 404\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-16T09:39:40.446Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "459492d6fe8bd9b49ab3-ba088b9870dcb788ca4d",
+              "file": "store/getOrder.spec.ts",
+              "line": 35,
+              "column": 7
+            },
+            {
+              "title": "Boundary Case: Get order with ID = 0",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 322,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[API Request] POST v2/pet - Status: 200\n"
+                        },
+                        {
+                          "text": "[API Request] POST v2/store/order - Status: 200\n"
+                        },
+                        {
+                          "text": "[API Request] GET v2/store/order/0 - Status: 404\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-16T09:39:40.507Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "459492d6fe8bd9b49ab3-e0f09e170528a730d038",
+              "file": "store/getOrder.spec.ts",
+              "line": 40,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "user\\createUser.spec.ts",
+      "file": "user/createUser.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "User Operations: Create User",
+          "file": "user/createUser.spec.ts",
+          "line": 7,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Happy Path: Create a new user with valid data",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 7,
+                      "status": "passed",
+                      "duration": 316,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[API Request] POST v2/user - Status: 200\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-16T09:39:40.513Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "078baf819b97add707f5-2ab94618d052e57aa4d7",
+              "file": "user/createUser.spec.ts",
+              "line": 14,
+              "column": 7
+            },
+            {
+              "title": "Negative Case: Create user with duplicate username",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 5,
+                      "status": "passed",
+                      "duration": 655,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[API Request] POST v2/user - Status: 200\n"
+                        },
+                        {
+                          "text": "[API Request] POST v2/user - Status: 200\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-16T09:39:40.606Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "078baf819b97add707f5-05124aceb9e44f61d8e1",
+              "file": "user/createUser.spec.ts",
+              "line": 23,
+              "column": 7
+            },
+            {
+              "title": "Boundary Case: Create user with empty password",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 7,
+                      "status": "passed",
+                      "duration": 309,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[API Request] POST v2/user - Status: 200\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-16T09:39:40.840Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "078baf819b97add707f5-0ca3b8a13548fdad213f",
+              "file": "user/createUser.spec.ts",
+              "line": 32,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "user\\deleteUser.spec.ts",
+      "file": "user/deleteUser.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "User Operations: Delete User",
+          "file": "user/deleteUser.spec.ts",
+          "line": 6,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Happy Path: Delete user by valid username",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 934,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[API Request] POST v2/user - Status: 200\n"
+                        },
+                        {
+                          "text": "[API Request] DELETE v2/user/user_1776332381126 - Status: 200\n"
+                        },
+                        {
+                          "text": "[API Request] GET v2/user/user_1776332381126 - Status: 404\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-16T09:39:41.113Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9a3ee57b10de4dd0c90f-8f38ffac654d23ff0d1c",
+              "file": "user/deleteUser.spec.ts",
+              "line": 17,
+              "column": 7
+            },
+            {
+              "title": "Negative Case: Delete user with non-existent username",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 7,
+                      "status": "passed",
+                      "duration": 618,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[API Request] POST v2/user - Status: 200\n"
+                        },
+                        {
+                          "text": "[API Request] DELETE v2/user/non_existent_user_99999 - Status: 404\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-16T09:39:41.165Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9a3ee57b10de4dd0c90f-71147feda55d95ee341c",
+              "file": "user/deleteUser.spec.ts",
+              "line": 26,
+              "column": 7
+            },
+            {
+              "title": "Boundary Case: Delete user with numeric string as username",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 638,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[API Request] POST v2/user - Status: 200\n"
+                        },
+                        {
+                          "text": "[API Request] DELETE v2/user/123456 - Status: 404\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-16T09:39:41.223Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9a3ee57b10de4dd0c90f-02da2a86196be4a30737",
+              "file": "user/deleteUser.spec.ts",
+              "line": 31,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "user\\getUser.spec.ts",
+      "file": "user/getUser.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "User Operations: Get User",
+          "file": "user/getUser.spec.ts",
+          "line": 7,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Happy Path: Get user by valid username",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 5,
+                      "status": "passed",
+                      "duration": 353,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[API Request] POST v2/user - Status: 200\n"
+                        },
+                        {
+                          "text": "[API Request] GET v2/user/user_1776332381286 - Status: 200\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-16T09:39:41.275Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "4f7329e6bdbd2f92f487-0e2f6f71c9819382fe3e",
+              "file": "user/getUser.spec.ts",
+              "line": 23,
+              "column": 7
+            },
+            {
+              "title": "Negative Case: Get user with non-existent username",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 309,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[API Request] POST v2/user - Status: 200\n"
+                        },
+                        {
+                          "text": "[API Request] GET v2/user/non_existent_123456789 - Status: 404\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-16T09:39:41.362Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "4f7329e6bdbd2f92f487-a86b16aaf17e706bb2ca",
+              "file": "user/getUser.spec.ts",
+              "line": 31,
+              "column": 7
+            },
+            {
+              "title": "Boundary Case: Get user with empty username",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 6,
+                      "status": "passed",
+                      "duration": 306,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[API Request] POST v2/user - Status: 200\n"
+                        },
+                        {
+                          "text": "[API Request] GET v2/user/ - Status: 405\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-16T09:39:41.385Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "4f7329e6bdbd2f92f487-217531a332eafeb2fbb0",
+              "file": "user/getUser.spec.ts",
+              "line": 36,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-04-16T09:39:36.752Z",
+    "duration": 5335.616999999999,
+    "expected": 30,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

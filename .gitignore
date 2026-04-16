@@ -1,10 +1,11 @@
 # Dependencies
 node_modules/
+.planning/
+.agent/
+
 
 # Playwright
-reports/
 test-results/
-playwright-report/
 blob-report/
 .playwright/
 

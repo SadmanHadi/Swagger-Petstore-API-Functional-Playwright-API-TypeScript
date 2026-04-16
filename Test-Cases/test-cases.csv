@@ -1,0 +1,13 @@
+TestCaseID,TestCaseScenario,TestCaseSteps,TestCaseStatus
+PET_001,Happy Path: Create Pet,1. POST /pet 2. Validate 200 3. Validate Schema,PASSED
+PET_002,Negative: Create Pet with invalid status,1. POST /pet with bad status 2. Validate behavior,PASSED
+PET_003,Boundary: Create Pet with empty name,1. POST /pet with name="" 2. Validate 200,PASSED
+PET_004,Happy Path: Get Pet by ID,1. GET /pet/{id} 2. Validate 200 3. Validate Schema,PASSED
+PET_005,Negative: Get Non-Existent Pet,1. GET /pet/999... 2. Validate 404,PASSED
+PET_006,Boundary: Get Pet with invalid string ID,1. GET /pet/abc 2. Validate 404/400,PASSED
+PET_007,Happy Path: Update Pet,1. PUT /pet 2. Validate 200 3. Validate name update,PASSED
+PET_008,Happy Path: Delete Pet,1. DELETE /pet/{id} 2. Validate 200 3. Verify 404 on GET,PASSED
+USER_001,Happy Path: Create User,1. POST /user 2. Validate 200,PASSED
+USER_002,Happy Path: Get User,1. GET /user/{username} 2. Validate 200 3. Validate Schema,PASSED
+STORE_001,Happy Path: Place Order,1. POST /store/order 2. Validate 200 3. Validate Schema,PASSED
+STORE_002,Happy Path: Delete Order,1. DELETE /store/order/{id} 2. Validate 200,PASSED

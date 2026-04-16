@@ -1,0 +1,30 @@
+TestCaseID,TestCaseScenario,TestCaseSteps,TestCaseStatus
+PET_CRE_01,Happy Path: Create Pet,1. POST /pet with valid data 2. Validate 200 & Schema,PASSED
+PET_CRE_02,Negative: Create Pet invalid status,1. POST /pet with bad enum 2. Validate behavior,PASSED
+PET_CRE_03,Boundary: Create Pet empty name,1. POST /pet with name="" 2. Validate 200,PASSED
+PET_GET_01,Happy Path: Get Pet by ID,1. GET /pet/{id} 2. Validate 200 & Schema,PASSED
+PET_GET_02,Negative: Get Non-Existent Pet,1. GET /pet/999999 2. Validate 404,PASSED
+PET_GET_03,Boundary: Get Pet invalid ID string,1. GET /pet/abc 2. Validate 404/400,PASSED
+PET_UPD_01,Happy Path: Update Pet,1. PUT /pet with new name 2. Validate 200 & Schema,PASSED
+PET_UPD_02,Negative: Update Pet missing ID,1. PUT /pet without ID 2. Validate behavior,PASSED
+PET_UPD_03,Boundary: Update Pet long name,1. PUT /pet with 1000 char name 2. Validate 200,PASSED
+PET_DEL_01,Happy Path: Delete Pet,1. DELETE /pet/{id} 2. Verify 404 on GET,PASSED
+PET_DEL_02,Negative: Delete Non-Existent Pet,1. DELETE /pet/99999 2. Validate 404,PASSED
+USER_CRE_01,Happy Path: Create User,1. POST /user 2. Validate 200,PASSED
+USER_CRE_02,Negative: Duplicate User,1. POST /user twice 2. Validate behavior,PASSED
+USER_CRE_03,Boundary: Empty Password User,1. POST /user with password="" 2. Validate 200,PASSED
+USER_GET_01,Happy Path: Get User,1. GET /user/{username} 2. Validate 200 & Schema,PASSED
+USER_GET_02,Negative: Get Unknown User,1. GET /user/fake_user 2. Validate 404,PASSED
+USER_GET_03,Boundary: Get Empty Username,1. GET /user/ 2. Validate 405/404,PASSED
+USER_DEL_01,Happy Path: Delete User,1. DELETE /user/{username} 2. Verify 404 on GET,PASSED
+USER_DEL_02,Negative: Delete Unknown User,1. DELETE /user/fake_user 2. Validate 404,PASSED
+USER_DEL_03,Boundary: Numeric Username Delete,1. DELETE /user/12345 2. Validate behavior,PASSED
+STORE_ORD_01,Happy Path: Place Order,1. POST /store/order 2. Validate 200 & Schema,PASSED
+STORE_ORD_02,Negative: Order Invalid PetID,1. POST /store/order with petId=-1 2. Validate behavior,PASSED
+STORE_ORD_03,Boundary: Order Max Quantity,1. POST /store/order with qty=1e6 2. Validate 200,PASSED
+STORE_GET_01,Happy Path: Get Order,1. GET /store/order/{id} 2. Validate 200 & Schema,PASSED
+STORE_GET_02,Negative: Get Missing Order,1. GET /store/order/abc 2. Validate 404,PASSED
+STORE_GET_03,Boundary: Get Order ID=0,1. GET /store/order/0 2. Validate 404,PASSED
+STORE_DEL_01,Happy Path: Delete Order,1. DELETE /store/order/{id} 2. Verify 404 on GET,PASSED
+STORE_DEL_02,Negative: Delete Unknown Order,1. DELETE /store/order/999 2. Validate 404,PASSED
+STORE_DEL_03,Boundary: Double Delete Order,1. DELETE /store/order/{id} twice 2. Validate 404,PASSED
