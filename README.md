@@ -4,18 +4,6 @@ A production-grade, domain-agnostic API automation framework built for the [Swag
 
 ---
 
-## 🏆 SQA Scorecard (100/100)
-
-| Category | Score | Status |
-| :--- | :--- | :--- |
-| **Test Coverage & Design** | 35/35 | Happy, Negative, and Boundary cases covering Pet, User, and Store entities. |
-| **Assertion Depth** | 25/25 | Comprehensive field validation and JSON Schema validation (AJV). |
-| **Project Structure & Reuse** | 20/20 | Modular structure with Generic API Client and thin-wrapper implementations. |
-| **Reporting & Artifacts** | 10/10 | HTML/JSON reports generated under `/reports/playwright-api`. |
-| **CI/CD** | 10/10 | GitHub Actions pipeline with automated result uploads. |
-
----
-
 ## 📁 Repository Structure
 
 ```text
