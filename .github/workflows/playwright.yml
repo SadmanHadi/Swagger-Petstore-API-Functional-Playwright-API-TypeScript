@@ -26,7 +26,7 @@ jobs:
       - name: Run Playwright tests
         run: pnpm test
         env:
-          BASE_URL: ${{ secrets.BASE_URL || 'https://petstore.swagger.io/v2/' }}
+          BASE_URL: ${{ secrets.BASE_URL || 'https://petstore.swagger.io/' }}
 
       - name: Upload Playwright report
         if: always()

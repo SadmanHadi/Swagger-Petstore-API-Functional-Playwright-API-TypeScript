@@ -1,6 +1,6 @@
 # Petstore API Automation Framework (Playwright + TypeScript)
 
-A production-grade, domain-agnostic API automation framework built for the [Swagger Petstore API](https://petstore.swagger.io/). Designed by a Senior SQA Automation Engineer to achieve a **100/100 score** for clean architecture, robustness, and reusability.
+A production-grade, domain-agnostic API automation framework built for the [Swagger Petstore API](https://petstore.swagger.io/). 
 
 ---
 
